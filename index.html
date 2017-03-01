@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Texas Shark Tank</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+<link href="animate.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(51.518641, -0.168163);
+    var map_options = {
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: myLatlng,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: myIcon
+    });
+
+    /* Remove if you dont want B/W Google Map */
+    /*
+    var styles = [
+      {
+        featureType: "all",
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ];
+
+    map.setOptions({styles: styles});
+    */
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Google Map Ends! -->
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- header -->
+  <div class="header">
+
+    <!-- menu -->
+    <!--div class="menu">
+
+      <ul>
+        <li><a href="#speakers">speakers</a></li>
+        <li><a href="#scheadule">scheadule</a></li>
+        <li><a href="#registration">registration</a></li>
+        <li><a href="#sponsors">sponsors</a></li>
+        <li><a href="#location">location</a></li>
+        <li><a href="#contact" class="open-contact-form">contact us</a></li>       
+      </ul>
+
+    </div-->
+    <!-- menu ends! -->
+
+    <!-- header container -->
+    <div class="container">
+
+      <!-- logo or main heading -->
+      <h1><a href="#">Texas Shark Tank 2017</a></h1>
+      <!-- logo or main heading ends! -->
+
+      <!-- subtitle -->
+		<p class="subtitle">The largest startup competition at the <b>University of Texas at Austin</b></a></strong>.</p>
+      <!-- subtitle ends! -->
+
+      <!-- when -->
+      <div class="when">
+
+        <div class="icon-holder">
+          <i class="fa fa-calendar"></i>
+        </div>
+
+        <div>
+          <p><strong>When</strong></p>
+          <p><span>1st April 2017</span><br />Starting at 10am</p>
+        </div>
+
+      </div>
+      <!-- when ends!-->
+
+      <!-- where -->
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>Where</strong></p>
+          <p><span>UT Austin</span><br /><a href="#">Student Activity Center</a></p>
+        </div>
+
+      </div>
+      <!-- where ends! -->
+
+      <!-- register -->
+      <div class="register-now">
+        <p>Register your team now!</p>
+        <a href="#registration" class="button">Register Now</a>
+      </div>
+      <!-- register ends! -->
+
+    </div>
+    <!-- header container ends! -->
+
+  </div>
+  <!-- header ends! -->
+
+  <!-- topics -->
+  <div class="topics">
+    <div class="container">
+
+      <h3><strong>Over four weeks,</strong><br />creative experts making great ideas happen.</h3>
+
+      <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Sed suscipit erat egestas ante sollicitudin, quis tristique leo tristique.</p> 
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-code fa-2x"></i>
+        <h4>Better Coding</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-line-chart fa-2x"></i>
+        <h4>Secret to Succeess</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-lightbulb-o fa-2x"></i>
+        <h4>Make Ideas Happen</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+    </div>
+  </div>
+  <!-- topics ends! -->
+
+  <a id="speakers" class="anchor"></a>
+
+  <!-- speakers -->
+  <div class="speakers">
+    <div class="container">
+
+        <h2>The Judges</h2>
+        <p class="subtitle">Opportunity to meet and pitch to the titans of the industry</p>
+
+     
+        <!-- featured ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Jennifer<br />Smith</h3>
+            <p><strong>Web developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+            <p><a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-linkedin fa-lg"></i></a></p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Mike<br />Jonson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Todd<br />Johnson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Jessica<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Lusi<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Mike<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Lisa<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Ken<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+        <!-- speaker ends! -->
+
+    </div>
+  </div>
+  <!-- speakers ends! -->
+
+  <a id="scheadule" class="anchor"></a>
+
+  <!-- schedule -->
+  <div class="schedule">
+    <div class="container">
+
+      <h2>Competition Schedule</h2>
+      <p class="subtitle"></p>
+
+      <div class="tabs">
+
+        <ul>
+          <li><a href="#tabs-1">Week 1, 7th</a></li>
+          <li><a href="#tabs-2">Week 2, 8th</a></li>
+          <li><a href="#tabs-3">Week 3, 9th</a></li>
+		  <li><a href="#tabs-3">Pitch Day</a></li>
+        </ul>
+        
+        <!-- day -->
+        <div id="tabs-1" class="day">
+
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+                <div>
+                  <h4><a href="#">Kickoff</a></h4>
+                  <p class="speaker"><strong>Samantha Jonson</strong><br/>Founder of Creative Agency</p>
+                  
+                  <p><img src="images/small_member_placeholder.jpg" alt="" /> Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                  <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+                </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="#">More stuff</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br/>Founder of Creative Agency</p>
+
+                <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus <a href="#"><i class="fa fa-anchor"></i> lorem vel interdum volutpat</a>. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event">
+
+            <!-- event time -->
+            <div class="event-time">13:00 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+              
+              <div>
+                <h4>Lunch Break</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">14:30 - 15:45 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="#">Workshop: The Future</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br/>Founder of Creative Agency</p>
+
+                <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+        <!-- day -->
+        <div id="tabs-2" class="day">
+          
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+             <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="#">Workshop: The Future</a></h4>
+                <p class="speaker"><strong>Some Person</strong><br/>Founder of Creative Agency</p>
+
+                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event">
+
+            <!-- event time -->
+            <div class="event-time">13:00 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+              
+              <div>
+                <h4>Lunch Break</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">14:30 - 15:45 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br/>Founder of Creative Agency</p>
+
+                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+        <!-- day -->
+        <div id="tabs-3" class="day">
+
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-up"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br/>Founder of Creative Agency</p>
+
+                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+      </div>
+
+    </div>
+  </div>
+  <!-- schedule ends! -->
+
+  <!-- why -->
+  <div class="why">
+    <div class="container">
+
+      <!-- testimonials -->
+        <div class="testimonials">
+
+          <h4>Testimonials</h4>
+
+          <div class="slides">
+
+            <blockquote>
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Mike Jonson<br /><span>Frontend Developer</span></cite>
+            </blockquote>
+
+            <blockquote>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Jennifer Jonson<br /><span>Frontend Developer</span></cite>
+            </blockquote>
+
+            <blockquote>
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Smith Jonson<br /><span>Frontend Developer</span></cite>
+            </blockquote>
+
+          </div>
+
+        </div>
+        <!-- testimonials ends! -->
+
+        <!-- bullets -->
+        <div class="bullets">
+
+          <h3>Why is this conference for you?</h3>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Stay Ahead of the curve</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Find new ways of thinking and problem-solving</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Networking opportunities</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Strengthen Your Skills</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+        </div>
+        <!-- bullets ends! -->
+
+    </div>
+  </div>
+  <!-- why ends! -->
+
+  <a id="registration" class="anchor"></a>
+
+  <!-- registration -->
+  <div class="registration">
+    <div class="container">
+
+      <h2>Pricing & Registration</h2>
+      <p class="subtitle"><strong>Only 300 available seats</strong> Get your Conference Tickets early.</p>
+
+      <p class="desc">Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+
+      <h3>Fill out your information</h3>
+
+      <!-- register form -->
+      <div class="form">
+
+        <form action="" method="post">
+          <input type="text" name="firstname" placeholder="First Name"/>
+          <input type="text" name="lastname" placeholder="Last Name"/>
+          <input type="text" name="email" placeholder="Email"/>
+          <input type="text" name="address" placeholder="Address"/>
+          <input type="text" name="zip" placeholder="Zip Code"/>
+          <input type="text" name="city" placeholder="City"/>
+          <input type="text" name="program" id="program" placeholder="Select your program on the right" disabled="disabled" />
+
+          <button name="submit" type="submit">Confirm Your Order</button>
+
+        </form>
+
+      </div>
+      <!-- register form ends! -->
+      
+      <!-- prices -->
+      <div class="price">
+
+        <div>
+          <p class="amount">$330</p>
+          <h4>Early Bird <span>Save NOW</span></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum id lacus vehicula sit amet euismod nibh sagittis.</p>
+        </div>
+
+      </div>
+      <!-- prices ends! -->
+
+    </div>
+  </div>
+  <!-- registration ends! -->
+
+  <a id="sponsors" class="anchor"></a>
+
+  <!-- sponsors -->
+  <div class="sponsors">
+    <div class="container">
+
+      <h2>Sponsors & Partners</h2>
+      <p class="subtitle">Interested in becoming a sponsor? <a href="#" class="open-contact-form">Get in touch</a></p>
+
+      <div class="slides">
+        <ul>
+          <li><a href="#"><img src="images/3docean-light-background.png" /></a></li>
+          <li><a href="#"><img src="images/activeden-light-background.png" /></a></li>
+          <li><a href="#"><img src="images/graphicriver-light-background.png" /></a></li>
+          <li><a href="#"><img src="images/videohive-light-background.png" /></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- sponsors ends! -->
+
+  <a id="location" class="anchor"></a>
+
+  <!-- location -->
+  <div class="location">
+    <div class="container">
+
+      <h2>Location and Venue</h2>
+      <p class="subtitle">area full of great hotels and restaurants.</p>
+
+      <!-- info -->
+      <div class="info">
+
+        <div class="maps">
+
+          <div class="images">
+            <img src="images/placeholder.jpg" />
+          </div>
+
+          <!-- do not remove, needed for Google Map -->
+          <div id="map_canvas"></div>
+          <!-- do not remove ends! -->
+
+        </div>
+
+        <div class="address">
+
+          <h4>Spend three inspiring days in the cultural and cosmopolitan city of London. The area is full of great hotels, restaurants and galleries.</h4>
+
+          <h5><i class="fa fa-chevron-right"></i> Venue</h5>
+
+          <div class="venue">
+            <p><span>Town and Country Resort & Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="#">Book Online</a>
+          </div>
+
+          <h5><i class="fa fa-chevron-right"></i> Nearby Accomodation</h5>
+
+          <div class="venue">
+            <p><span>Town and Country Resort & Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="#">Book Online</a>
+          </div>
+
+          <div class="venue">
+            <p><span>Town and Country Resort & Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="#">Book Online</a>
+          </div>
+
+          <div class="venue">
+            <p><span>Town and Country Resort & Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="#">Book Online</a>
+          </div>
+
+          <h5><i class="fa fa-chevron-right"></i> Additional details</h5>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+
+      </div>
+      <!-- info ends! -->
+    
+    </div>
+  </div>
+  <!-- location ends! -->
+
+  <!-- social -->
+  <div class="social">
+    <div class="container">
+
+      <div>
+        <h2>Keep me informed</h2>
+        <p class="subtitle">Signup to our newsletter or connect via social networks</p>
+
+        <form action="" method="post">
+          <input type="text" name="name" placeholder="enter your email address" />
+          <button name="submit" type="submit"><i class="fa fa-arrow-circle-right"></i></button>
+        </form>
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+  <!-- social ends! -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+
+      <p>Copyright 2014 <a href="http://mage-themes.com">Mage-Themes.com</a></p>
+
+    </div>
+  </div>
+  <!-- footer ends! -->
+
+</div>
+
+<!-- back to top -->
+<div class="back">
+  <div class="container">
+
+    <a href="#top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+  </div>
+</div>
+<!-- back to top ends! -->
+
+<!-- contact form overlay popup -->
+<div class="overlay" style="display: none;">
+
+  <div class="contact-form">
+    
+    <h3>Contact Us</h3>
+    <p>We will get back to you as soon as possible</p>
+
+    <!-- contact form -->
+    <div class="form">
+      <form action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" name="email" placeholder="Email"/>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button name="submit" type="submit">Send Message</button>
+
+      </form>
+    </div>
+    <!-- contact form ends! -->
+
+    <!-- Do Not Remove! -->
+    <p class="error"></p>
+    <p class="message"></p>
+    <!-- Do Not Remove! Ends! -->
+
+    <a href="#" class="close-contact-form"><i class="fa fa-times fa-lg"></i></a>
+  </div>
+
+</div>
+<!-- contact form overlay popup ends! -->
+
+<!-- scripts -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.parallax-1.1.3.js"></script>
+<script src="scripts/jquery.inview.min.js"></script>
+<script src="scripts/form.js"></script>
+<script src="scripts/theme.js"></script>
+<!-- scripts ends! -->
+
+</body>
+</html>
