@@ -148,7 +148,7 @@ a {
 /* 5. Header */
 .header {
   height: 1002px;
-  background: #888888 url("images/diner-336499.jpg") 50% 0 no-repeat fixed;
+  background: #888888 url("images/cover.jpg") 50% 25% no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: 1;
@@ -164,7 +164,23 @@ a {
   .header .container {
     padding: 60px;
     position: relative;
-    min-height: 665px; }
+    min-height: 665px; 
+	/*background-image: url("images/cover.JPG");
+	background-position: center;
+	background-size: cover;*/
+}
+.header .tint{
+	 z-index: 1;
+	 height: 1002px;
+	 background: rgba(0, 0, 0, 0.55);
+  	 background-size: cover;
+     -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      
+}
   .header .menu {
     background: rgba(149, 165, 165, 0.8); }
   .header ul {
@@ -902,7 +918,8 @@ a {
   .social input {
     padding: 10px 20px;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+	width: 300px;}
   .social button {
     cursor: pointer; }
   .social button, .social a {
