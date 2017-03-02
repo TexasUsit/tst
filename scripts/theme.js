@@ -1,5 +1,16 @@
 $(document).ready(function() {
 "use strict";
+    
+    function isVisible(row, container) {
+        if ($(row).length) {
+            var elementTop = $(row).offset().top,
+            elementHeight = $(row).height(),
+            containerTop = container.scrollTop(),
+            containerHeight = container.height();
+    
+            return ((((elementTop - containerTop) + elementHeight) > 0) && ((elementTop - containerTop) < containerHeight));
+        }
+    }
 
   // Single Speakers
   $('.single').hover(function() {
@@ -125,5 +136,64 @@ $(document).ready(function() {
   $fadeInRight.one('inview', function(event, visible) {
     if (visible) { $(this).addClass('animated fadeInRight'); }
   });
+    
+    $(window).scroll(function() {
+        if (isVisible($('.header div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.speakers div'), $(window))){
+            document.getElementById('speakers').style.color="grey"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.schedule div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="grey"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.registration div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="grey"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.sponsors div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="grey"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.location div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="grey"
+            document.getElementById('contact').style.color="white"
+        }
+        else if (isVisible($('.contact div'), $(window))){
+            document.getElementById('speakers').style.color="white"
+            document.getElementById('schedule').style.color="white"
+            document.getElementById('registration').style.color="white"
+            document.getElementById('sponsors').style.color="white"
+            document.getElementById('location').style.color="white"
+            document.getElementById('contact').style.color="grey"
+        }
+    })
 
 });
