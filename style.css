@@ -182,7 +182,11 @@ a {
       
 }
   .header .menu {
-    background: rgba(149, 165, 165, 0.8); }
+    background: rgba(0,0,0,0.65); 
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
   .header ul {
     list-style-type: none;
     padding: 15px 60px;
