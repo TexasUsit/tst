@@ -619,7 +619,9 @@ a {
 
 /* 10. Registration & Sponsors */
 .registration .container, .sponsors .container {
-  padding: 0 60px; }
+  	padding: 0 60px;
+
+}
 .registration h2, .sponsors h2 {
   margin-bottom: 0; }
 
@@ -918,7 +920,10 @@ a {
   font-family: "Roboto Condensed", sans-serif; }
   .footer .container {
     padding: 40px 0;
-    text-align: center; }
+	 display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    }
   .footer p {
     font-size: 1.28571em;
     color: #010101;
@@ -1036,3 +1041,9 @@ a {
 .anchor {
   display: block;
   height: 0px; }
+
+.img-footer {
+	margin-top: 10px;
+	flex: 1 0 0;
+	
+}
