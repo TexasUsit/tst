@@ -15,7 +15,7 @@
 /* 1. Imports & Clears */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext);
-.header .menu:after, .header ul:after, .when:after, .where:after, .topics .container:after, .speakers:after, .featured:after, .schedule ul:after, .day:after, .event:after, .event .event-info div:after, .bullets:after, .registration:after, .sponsors .container:after, .info:after, .social div:after {
+.page .menu:after, .header ul:after, .when:after, .where:after, .topics .container:after, .speakers:after, .featured:after, .schedule ul:after, .day:after, .event:after, .event .event-info div:after, .bullets:after, .registration:after, .sponsors .container:after, .info:after, .social div:after {
   clear: both;
   content: ".";
   display: block;
@@ -181,33 +181,34 @@ a {
      -o-background-size: cover;
       
 }
-  .header .menu {
+  .page .menu {
     background: rgba(0,0,0,0.65); 
 	position: fixed;
-	z-index: 10;
+	z-index: 10000;
 	width: 100%;
+    padding-bottom: 15px;
 }
-  .header ul {
+  .page ul {
     list-style-type: none;
     padding: 15px 60px;
     max-width: 1180px;
     margin: 0 auto; }
-    .header ul li {
+    .page ul li {
       float: left;
       margin-right: 10px; }
-      .header ul li a {
+      .page ul li a {
         font-size: 1.14286em;
         color: white;
         text-transform: uppercase;
         font-weight: 300; }
-        .header ul li a:hover, .header ul li a.active {
+        .page ul li a:hover, .page ul li a.active {
           color: black; }
-  .header h1 {
+  .page h1 {
     padding-top: 100px;
     margin-bottom: 0; }
-  .header .subtitle {
+  .page .subtitle {
     margin-bottom: 80px; }
-  .header a {
+  .page a {
     text-decoration: none;
     color: white; }
 
