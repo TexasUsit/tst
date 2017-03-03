@@ -13,9 +13,11 @@
 <link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
 <link href="animate.min.css" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
 
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	
 <script>
   function initialize() {
     var myLatlng = new google.maps.LatLng(30.28491, -97.7360057);
@@ -53,6 +55,7 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+	<script src="validation-functions.js"></script>
 <!-- Google Map Ends! -->
 
 </head>
@@ -612,16 +615,50 @@
       <!-- register form -->
       <div class="form">
 
-        <form action="" method="post">
-          <input type="text" name="firstname" placeholder="First Name"/>
+        <form method="POST" id="register-form">
+          <input type="text" name="Contact Email Address" placeholder="Contact Email Address"/>
+		  <input type="text" name="Competitor #1 Name" placeholder="Team member #1"/>
+		  <select name="Competitor #1 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+		  <input type="text" name="Competitor #2 Name" placeholder="Team member #2"/>
+		  <select name="Competitor #2 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+			<input type="text" name="Competitor #3 Name" placeholder="Team member #3"/>
+		  <select name="Competitor #3 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+			<input type="text" name="Competitor #4 Name" placeholder="Team member #4"/>
+		  <select name="Competitor #4 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
           <input type="text" name="lastname" placeholder="Last Name"/>
           <input type="text" name="email" placeholder="Email"/>
-          <input type="text" name="address" placeholder="Address"/>
-          <input type="text" name="zip" placeholder="Zip Code"/>
-          <input type="text" name="city" placeholder="City"/>
-          <input type="text" name="program" id="program" placeholder="Select your program on the right" disabled="disabled" />
+          
+          <input type="text" name="program" id="program" placeholder="Pay the deposit at the link below" disabled="disabled" />
 
-          <button name="submit" type="submit">Confirm Your Order</button>
+          <button name="submit" type="submit" href="http://texasusit.org">Complete Registeration</button>
 
         </form>
 
@@ -823,6 +860,7 @@
 <script src="scripts/jquery.inview.min.js"></script>
 <script src="scripts/form.js"></script>
 <script src="scripts/theme.js"></script>
+<script src="scripts/register-form.js"></script>
 <!-- scripts ends! -->
 
 </body>
