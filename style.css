@@ -135,6 +135,10 @@ a {
     .subtitle, .topics h3 {
       font-size: 1.5em; } }
 
+#modal{
+    z-index: 10005;
+}
+
 /* 4. Main Container */
 .page {
   text-align: left;
