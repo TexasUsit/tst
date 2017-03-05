@@ -116,7 +116,9 @@ a {
   a:hover {
     text-decoration: none;
     color: black; }
-
+.bl{
+	color: #2c2e33;
+}
 .subtitle, .topics h3 {
   font-size: 1.85714em;
   font-family: "Roboto Condensed", sans-serif;
@@ -148,16 +150,16 @@ a {
 /* 5. Header */
 .header {
   height: 1002px;
-  background: #888888 url("images/cover.jpg") 50% 25% no-repeat fixed;
+  background: url("images/cover.jpg") 50% 25% no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: 1;
   -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;*/
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+ }
   @media all and (max-width: 940px) {
     .header {
       height: auto; } }
@@ -172,7 +174,7 @@ a {
 .header .tint{
 	 z-index: 1;
 	 height: 1002px;
-	 background: rgba(0, 0, 0, 0.55);
+	 background: rgba(0, 0, 0, 0.65);
   	 background-size: cover;
      -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
      clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 80%);
@@ -210,7 +212,15 @@ a {
     margin-bottom: 80px; }
   .page a {
     text-decoration: none;
-    color: white; }
+	color: white;
+   }
+
+.topics a{
+	color: inherit;
+	font-style: italic;
+}
+
+
 
 .when, .where, .register-now {
   font-size: 1.28571em;
@@ -237,7 +247,7 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   margin-top: 5px; }
 .when .icon-holder, .where .icon-holder {
-  background-color: #95a5a5;
+  background-color: #35383d;
   width: 64px;
   padding: 14px 0;
   text-align: center;
@@ -249,7 +259,7 @@ a {
   line-height: 1.2em; }
 .when strong, .where strong {
   font-weight: bold;
-  color: #95a5a5;
+  color: white;
   text-transform: uppercase; }
 
 .register-now {
@@ -270,8 +280,8 @@ a {
         line-height: 50px; } }
 
 .button {
-  background: #95a5a5;
-  border: 3px solid #95a5a5;
+  background: #35383d;
+  border: 3px solid #35383d;
   padding: 0 46px;
   text-decoration: none;
   color: white;
@@ -304,7 +314,7 @@ a {
           width: 100%;
           padding-right: 0; } }
       .topics .container div h4, .topics .container div .fa {
-        color: #95a5a5;
+        color: black;
         margin-bottom: 20px; }
         @media all and (max-width: 780px) {
           .topics .container div h4, .topics .container div .fa {
@@ -498,7 +508,7 @@ a {
     display: block;
     width: 11px;
     height: 11px;
-    background-color: #95a5a5;
+    background-color: grey;
     position: absolute;
     top: 17px;
     right: -6px;
@@ -508,7 +518,7 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.71429em;
   font-weight: 300;
-  color: #95a5a5;
+  color: black;
   line-height: 1.82em; }
   @media all and (max-width: 780px) {
     .event .event-time, .event .event-info h4 {
@@ -524,7 +534,7 @@ a {
         font-size: 1.57143em; } }
     .event .event-info h4 a {
       text-decoration: none;
-      color: #95a5a5; }
+      color: black; }
   .event .event-info div {
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 20px;
@@ -549,18 +559,12 @@ a {
         font-size: 1.22222em; } }
 
 .why {
-  background: black url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  /*background: black url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.60)), to(rgba(0, 0, 0, 0.60))), url("images/shark.jpg") no-repeat 50% 0 fixed;
   /* Saf4+, Chrome */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  /*background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;*/
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* IE10 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;
+  /*background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/14gfPkZbw.jpg") no-repeat 50% 0 fixed;*/
   /* W3C */
   color: white;
   -webkit-background-size: cover;
@@ -594,7 +598,7 @@ a {
     font-style: normal;
     font-size: 0.77778em;
     margin-top: 20px;
-    color: #95a5a5;
+    color: black;
     font-family: "Roboto Condensed", sans-serif; }
     .testimonials cite span {
       text-transform: uppercase;
@@ -658,7 +662,7 @@ a {
 .registration h3 {
   font-size: 1.85714em;
   font-weight: 300;
-  color: #95a5a5; }
+  color: #2c2e33; }
 
 .form, .price {
   float: left;
@@ -694,8 +698,8 @@ a {
 .form button {
   font-size: 1.71429em;
   color: white;
-  background-color: #95a5a5;
-  border: 3px solid #95a5a5;
+  background-color: #2c2e33;
+  border: 3px solid black;
   width: 100%;
   height: 81px;
   font-family: "Roboto Condensed", sans-serif;
@@ -719,7 +723,7 @@ a {
     margin-top: 20px;
     padding-right: 25px; }
     .price h4 span {
-      color: #95a5a5; }
+      color: #2c2e33; }
   .price p {
     color: #888888;
     margin-right: 25px; }
@@ -742,7 +746,7 @@ a {
     .price div:last-child {
       margin-bottom: 0; }
     .price div .amount {
-      background-color: #95a5a5;
+      background-color: #2c2e33;
       float: left;
       height: 160px;
       width: 160px;
@@ -770,7 +774,7 @@ a {
   margin-bottom: 90px; }
   .sponsors .subtitle a {
     font-weight: bold;
-    color: #95a5a5;
+    color: black;
     border-bottom: 2px solid #e8ebeb;
     text-decoration: none;
     display: inline-block;
@@ -813,18 +817,13 @@ a {
 .location {
   padding-top: 124px;
   position: relative;
-  background: black url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  /*background: black url("images/sac-scene2.jpg") no-repeat 50% 0 fixed;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("images/sac-scene2.jpg") no-repeat 50% 0 fixed;
   /* Saf4+, Chrome */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  /*background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/sac-scene2") no-repeat 50% 0 fixed;*/
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
+  /*background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/sac-scene2.jpg") no-repeat 50% 0 fixed;*/
   /* FF3.6+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
-  /* IE10 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/observation-deck-381232_1920.jpg") no-repeat 50% 0 fixed;
   /* W3C */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -880,7 +879,7 @@ a {
     text-transform: uppercase;
     margin-bottom: 20px; }
     .address h5 i {
-      color: #95a5a5; }
+      color: black; }
   .address h5, .address h4, .address p {
     line-height: 1.2em; }
   .address p {
@@ -889,9 +888,11 @@ a {
 .venue {
   margin-bottom: 15px; }
   .venue p {
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+	font-size: 20px;}
   .venue a, .venue span {
-    color: #95a5a5; }
+    color: #95a5a5; 
+	font-size: 25px;}
 
 .social {
   background-color: white;
@@ -1050,7 +1051,7 @@ a {
   .back a {
     width: 50px;
     height: 50px;
-    background: #95a5a5;
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     color: white;
     position: absolute;
@@ -1071,4 +1072,9 @@ a {
 	margin-top: 10px;
 	flex: 1 0 0;
 	
+}
+
+#main-description {
+	font-size: 18px;
+	padding-bottom: 20px;
 }

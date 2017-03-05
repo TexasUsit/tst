@@ -67,7 +67,7 @@ $(document).ready(function() {
   });
 
   // Parallax effect
-  //$('.header').parallax("50%", 0.2);
+  $('.header').parallax("50%", 0.2);
 
   // Schedule
   $('.event-info p:not(.speaker)').hide();
