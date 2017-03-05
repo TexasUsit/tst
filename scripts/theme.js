@@ -139,61 +139,48 @@ $(document).ready(function() {
     
     $(window).scroll(function() {
         if (isVisible($('.header div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="white"
+            document.getElementById('speakers-link').style.color="white"
+            document.getElementById('schedule-link').style.color="white"
+            document.getElementById('sponsors-link').style.color="white"
+            document.getElementById('location-link').style.color="white"
+            document.getElementById('contact-link').style.color="white"
         }
         else if (isVisible($('.speakers div'), $(window))){
-            document.getElementById('speakers').style.color="grey"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="white"
+            document.getElementById('speakers-link').style.color="grey"
+            document.getElementById('schedule-link').style.color="white"
+            document.getElementById('sponsors-link').style.color="white"
+            document.getElementById('location-link').style.color="white"
+            document.getElementById('contact-link').style.color="white"
         }
         else if (isVisible($('.schedule div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="grey"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="white"
-        }
-        else if (isVisible($('.registration div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="grey"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="white"
+            document.getElementById('speakers-link').style.color="white"
+            document.getElementById('schedule-link').style.color="grey"
+            document.getElementById('sponsors-link').style.color="white"
+            document.getElementById('location-link').style.color="white"
+            document.getElementById('contact-link').style.color="white"
         }
         else if (isVisible($('.sponsors div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="grey"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="white"
+            document.getElementById('speakers-link').style.color="white"
+            document.getElementById('schedule-link').style.color="white"
+            document.getElementById('sponsors-link').style.color="grey"
+            document.getElementById('location-link').style.color="white"
+            document.getElementById('contact-link').style.color="white"
         }
         else if (isVisible($('.location div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="grey"
-            document.getElementById('contact').style.color="white"
+            document.getElementById('speakers-link').style.color="white"
+            document.getElementById('schedule-link').style.color="white"
+            document.getElementById('sponsors-link').style.color="white"
+            document.getElementById('location-link').style.color="grey"
+            document.getElementById('contact-link').style.color="white"
         }
         else if (isVisible($('.contact div'), $(window))){
-            document.getElementById('speakers').style.color="white"
-            document.getElementById('schedule').style.color="white"
-            document.getElementById('registration').style.color="white"
-            document.getElementById('sponsors').style.color="white"
-            document.getElementById('location').style.color="white"
-            document.getElementById('contact').style.color="grey"
+            document.getElementById('speakers-link').style.color="white"
+            document.getElementById('schedule-link').style.color="white"
+            document.getElementById('sponsors-link').style.color="white"
+            document.getElementById('location-link').style.color="white"
+            document.getElementById('contact-link').style.color="grey"
         }
-    })
+    });
+    
 
 });
