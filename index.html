@@ -17,6 +17,16 @@
 
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 <script>
   function initialize() {
@@ -63,6 +73,115 @@
 <body>
 
 <div class="page">
+    
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="registration">
+    <div class="container">
+
+      <h2>Registration</h2>
+      <p class="subtitle">Registeration ends <strong>March 22nd</strong></p>
+
+      <h3>Fill out your information</h3>
+
+      <!-- register form -->
+      <div class="form">
+
+        <form method="POST" id="register-form">
+          <input type="text" name="Contact Email Address" placeholder="Contact Email Address"/>
+		  <input type="text" name="Competitor #1 Name" placeholder="Team member #1"/>
+		  <select name="Competitor #1 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+		  <input type="text" name="Competitor #2 Name" placeholder="Team member #2"/>
+		  <select name="Competitor #2 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+			<input type="text" name="Competitor #3 Name" placeholder="Team member #3"/>
+		  <select name="Competitor #3 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+			<input type="text" name="Competitor #4 Name" placeholder="Team member #4"/>
+		  <select name="Competitor #4 Year">
+			<option value="">Select School Year</option>
+  			<option value="Freshman">Freshman</option>
+			<option value="Sophomore">Sophomore</option>
+			<option value="Junior">Junior</option>
+			<option value="Senior">Senior</option>
+			<option value="Other">Other</option>
+		 </select>
+          <input type="text" name="lastname" placeholder="Last Name"/>
+          <input type="text" name="email" placeholder="Email"/>
+          
+          <input type="text" name="program" id="program" placeholder="Pay the deposit at the link below" disabled="disabled" />
+
+          <button name="submit" type="submit" href="#success" data-dismiss="modal" data-toggle="modal">Complete Registeration</button>
+
+        </form>
+
+      </div>
+      <!-- register form ends! -->
+      
+      <!-- prices -->
+	<a href="http://www.texasusit.org/register">
+      <div class="price">
+
+        <div>
+          <p class="amount">$60</p>
+          <h4>Refundable <span>Registration Fee</span></h4>
+          <p>Registration Fee is refunded once your team sends a proposal in by March 22nd</p>
+        </div>
+
+      </div>
+	</a>
+      <!-- prices ends! -->
+
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Successful registration modal -->
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Successful registration!</h4>
+      </div>
+      <div class="modal-body">
+        We have received your registration information. Please be sure to go to texasusit.org and pay the refundable deposit. We cannot sign up your team until you do so!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
     <!-- menu -->
     <div class="menu">
@@ -128,10 +247,10 @@
       <!-- register -->
       <div class="register-now">
         <p>Register your team now!</p>
-        <a href="#registration" class="button">Register Now</a>
+        <a href="#modal" class="button" data-toggle="modal" >Register Now</a>
       </div>
       <!-- register ends! -->
-		
+    	
     </div>
     <!-- header container ends! -->
 	</div>
@@ -497,61 +616,6 @@
 
       <h2>Registration</h2>
       <p class="subtitle">Registeration ends <strong>March 22nd</strong></p>
-
-      <h3>Fill out your information</h3>
-
-      <!-- register form -->
-      <div class="form">
-
-        <form method="POST" id="register-form">
-          <input type="text" name="Contact Email Address" placeholder="Contact Email Address"/>
-		  <input type="text" name="Competitor #1 Name" placeholder="Team member #1"/>
-		  <select name="Competitor #1 Year">
-			<option value="">Select School Year</option>
-  			<option value="Freshman">Freshman</option>
-			<option value="Sophomore">Sophomore</option>
-			<option value="Junior">Junior</option>
-			<option value="Senior">Senior</option>
-			<option value="Other">Other</option>
-		 </select>
-		  <input type="text" name="Competitor #2 Name" placeholder="Team member #2"/>
-		  <select name="Competitor #2 Year">
-			<option value="">Select School Year</option>
-  			<option value="Freshman">Freshman</option>
-			<option value="Sophomore">Sophomore</option>
-			<option value="Junior">Junior</option>
-			<option value="Senior">Senior</option>
-			<option value="Other">Other</option>
-		 </select>
-			<input type="text" name="Competitor #3 Name" placeholder="Team member #3"/>
-		  <select name="Competitor #3 Year">
-			<option value="">Select School Year</option>
-  			<option value="Freshman">Freshman</option>
-			<option value="Sophomore">Sophomore</option>
-			<option value="Junior">Junior</option>
-			<option value="Senior">Senior</option>
-			<option value="Other">Other</option>
-		 </select>
-			<input type="text" name="Competitor #4 Name" placeholder="Team member #4"/>
-		  <select name="Competitor #4 Year">
-			<option value="">Select School Year</option>
-  			<option value="Freshman">Freshman</option>
-			<option value="Sophomore">Sophomore</option>
-			<option value="Junior">Junior</option>
-			<option value="Senior">Senior</option>
-			<option value="Other">Other</option>
-		 </select>
-          <input type="text" name="lastname" placeholder="Last Name"/>
-          <input type="text" name="email" placeholder="Email"/>
-          
-          <input type="text" name="program" id="program" placeholder="Pay the deposit at the link below" disabled="disabled" />
-
-          <button name="submit" type="submit" href="http://texasusit.org">Complete Registeration</button>
-
-        </form>
-
-      </div>
-      <!-- register form ends! -->
       
       <!-- prices -->
 	<a href="http://www.texasusit.org/register">
