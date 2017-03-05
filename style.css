@@ -672,9 +672,10 @@ a {
   font-weight: 300;
   color: #2c2e33; }
 
-.form, .price {
+.form {
   float: left;
-  width: 50%; }
+  width: 45%; 
+}
   @media all and (max-width: 1180px) {
     .form, .price {
       width: 100%; } }
@@ -724,7 +725,8 @@ a {
   padding-left: 15px; }
   @media all and (max-width: 1180px) {
     .price {
-      padding: 0; } }
+      padding-bottom: 20px;
+	  } }
   .price h4 {
     font-size: 1.78571em;
     font-weight: bold;
@@ -1085,4 +1087,8 @@ a {
 #main-description {
 	font-size: 18px;
 	padding-bottom: 20px;
+}
+
+#price-modal {
+	padding-left: 0px;
 }
