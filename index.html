@@ -130,25 +130,16 @@
 			<option value="Senior">Senior</option>
 			<option value="Other">Other</option>
 		 </select>
-          <input type="text" name="lastname" placeholder="Last Name"/>
-          <input type="text" name="email" placeholder="Email"/>
           
           <input type="text" name="program" id="program" placeholder="Pay the deposit at the link below" disabled="disabled" />
-
-          <button name="submit" type="submit" href="#success" data-dismiss="modal" data-toggle="modal">Complete Registeration</button>
-
-        </form>
-
-      </div>
-      <!-- register form ends! -->
-      
-      <!-- prices -->
+			
+			   <!-- prices -->
 	<a href="http://www.texasusit.org/register">
-      <div class="price">
+      <div class="price" id="price-modal">
 
         <div>
           <p class="amount">$60</p>
-          <h4>Refundable <span>Registration Fee</span></h4>
+          <h4 style="color: black;">Refundable <span>Registration Fee</span></h4>
           <p>Registration Fee is refunded once your team sends a proposal in by March 22nd</p>
         </div>
 
@@ -156,6 +147,15 @@
 	</a>
       <!-- prices ends! -->
 
+			
+          <button name="submit" type="submit" href="#success" data-dismiss="modal" data-toggle="modal">Complete Registeration</button>
+
+        </form>
+
+      </div>
+      <!-- register form ends! -->
+      
+   
     </div>
   </div>
           </div>
@@ -187,7 +187,6 @@
     <div class="menu">
 		
       <ul>
-        <li><a href="#speakers" id="speakers-link">speakers</a></li>
         <li><a href="#schedule" id="schedule-link">schedule</a></li>
         <li><a href="#sponsors" id="sponsors-link">sponsors</a></li>
         <li><a href="#location" id="location-link">location</a></li>
@@ -207,7 +206,7 @@
 		
 
       <!-- logo or main heading -->
-      <h1><a href="#">Texas Shark Tank 2017</a></h1>
+      <h1 style="font-size: 42px;"><a href="#">Texas Shark Tank 2017</a></h1>
       <!-- logo or main heading ends! -->
 
       <!-- subtitle -->
@@ -256,15 +255,15 @@
 	</div>
   </div>
   <!-- header ends! -->
-
+  <a name="about"></a>
   <!-- topics -->
   <div class="topics">
     <div class="container">
-
+		<p id="main-description"><strong style="color: black;">TEXAS SHARK TANK</strong> (TST) is a one-of-a-kind entrepreneurial case competition hosted by the <strong><a href="http://texasusit.org">University Securities Investment Team</a> and the <a href="http://txconvergent.org">Texas Convergent</a></strong>. TST gives UT students the chance to pitch a business idea to a panel of angel investors, investment professionals, and serial entrepreneurs. Students will come up with their own idea, develop a business plan/implementation strategy, and a prodcut mockup to pitch to judges. Texas Convergent will be hosting a two week incubator program to assist competition participants in building out their ideas. Texas Shark Tank starts on March 7th culminating with the <strong>Pitch Day on April 1.</strong></p>
+		
       <h3><strong>Over four weeks,</strong><br />creative experts making great ideas happen.</h3>
 
       <p></p> 
-
       <!-- single topic -->
       <div>
         <i class="fa fa-line-chart fa-2x"></i>
@@ -292,83 +291,6 @@
     </div>
   </div>
   <!-- topics ends! -->
-
-  <a id="speakers" class="anchor"></a>
- 
-  <!-- speakers -->
-  <div class="speakers">
-    <div class="container">
-
-        <h2>The Judges</h2>
-        <p class="subtitle">Opportunity to meet and pitch to the titans of the industry</p>
-			<p class="subtitle"> Coming Soon!</p>
-     
-        <!-- featured ends! -->
-		
-        <!-- speaker -->
-        <!-- <div class="single">
-          <img src="images/member_placeholder.jpg" alt="" />
-
-          <div>
-            <h3>Jennifer<br />Smith</h3>
-            <p><strong>Web developer</strong></p>
-            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
-            <p><a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-linkedin fa-lg"></i></a></p>
-          </div>
-        </div> -->
-        <!-- speaker ends! -->
-
-        <!-- speaker -->
-        <!-- <div class="single">
-          <img src="images/member_placeholder.jpg" alt="" />
-			
-          <div>
-            <h3>Mike<br />Jonson</h3>
-            <p><strong>Frontend developer</strong></p>
-            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
-          </div>
-        </div> -->
-        <!-- speaker ends! -->
-
-        <!-- speaker -->
-        <!-- <div class="single">
-          <img src="images/member_placeholder.jpg" alt="" />
-
-          <div>
-            <h3>Todd<br />Johnson</h3>
-            <p><strong>Frontend developer</strong></p>
-            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
-          </div>
-        </div> -->
-        <!-- speaker ends! -->
-
-        <!-- speaker -->
-        <!-- <div class="single">
-          <img src="images/member_placeholder.jpg" alt="" />
-
-          <div>
-            <h3>Jessica<br />Smith</h3>
-            <p><strong>Frontend developer</strong></p>
-            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
-          </div>
-        </div> -->
-        <!-- speaker ends! -->
-
-        <!-- speaker -->
-        <!-- <div class="single">
-          <img src="images/member_placeholder.jpg" alt="" />
-
-          <div>
-            <h3>Lusi<br />Smith</h3>
-            <p><strong>Frontend developer</strong></p>
-            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
-          </div>
-        </div> -->
-        <!-- speaker ends! -->
-
-    </div>
-  </div>
-  <!-- speakers ends! -->
 
   <a id="schedule" class="anchor"></a>
 
@@ -545,6 +467,83 @@
   </div>
   <!-- schedule ends! -->
 
+  <a id="speakers" class="anchor"></a>
+ 
+  <!-- speakers -->
+  <div class="speakers">
+    <div class="container">
+
+        <h2>The Judges</h2>
+        <p class="subtitle">Opportunity to meet and pitch to the titans of the industry</p>
+			<p class="subtitle"> Coming Soon!</p>
+     
+        <!-- featured ends! -->
+		
+        <!-- speaker -->
+        <!-- <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Jennifer<br />Smith</h3>
+            <p><strong>Web developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+            <p><a href="#"><i class="fa fa-twitter fa-lg"></i></a> <a href="#"><i class="fa fa-linkedin fa-lg"></i></a></p>
+          </div>
+        </div> -->
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <!-- <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+			
+          <div>
+            <h3>Mike<br />Jonson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div> -->
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <!-- <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Todd<br />Johnson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div> -->
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <!-- <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Jessica<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div> -->
+        <!-- speaker ends! -->
+
+        <!-- speaker -->
+        <!-- <div class="single">
+          <img src="images/member_placeholder.jpg" alt="" />
+
+          <div>
+            <h3>Lusi<br />Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div> -->
+        <!-- speaker ends! -->
+
+    </div>
+  </div>
+  <!-- speakers ends! -->
+
   <!-- why -->
   <div class="why">
     <div class="container">
@@ -610,7 +609,28 @@
   <a id="registration" class="anchor"></a>
 
   <!-- registration -->
-  
+  <div class="registration">
+    <div class="container">
+
+      <h2>Registration</h2>
+      <p class="subtitle">Registeration ends <strong>March 22nd</strong></p>
+      
+      <!-- prices -->
+	<a href="http://www.texasusit.org/register">
+      <div class="price">
+
+        <div>
+          <p class="amount">$60</p>
+          <h4 style="color: black;">Refundable <span style="color: #2c2e33">Registration Fee</span></h4>
+          <p>Registration Fee is refunded once your team sends a proposal in by March 22nd</p>
+        </div>
+
+      </div>
+	</a>
+      <!-- prices ends! -->
+
+    </div>
+  </div>
   <!-- registration ends! -->
 
   <a id="sponsors" class="anchor"></a>
@@ -661,17 +681,17 @@
 
         <div class="address">
 
-          <h4>Spend three inspiring days in the cultural and cosmopolitan city of London. The area is full of great hotels, restaurants and galleries.</h4>
+          <h4>The Pitch Day will be held on campus at the University of Texas</h4>
 
-          <h5><i class="fa fa-chevron-right"></i> Venue</h5>
+          <h5 style="font-size: 28px;"><i class="fa fa-chevron-right"></i> Venue</h5>
 
           <div class="venue">
-            <p><span>Town and Country Resort & Convention Center</span></p>
-            <p>500 Hotel Circle North</p>
-            <p>San Diego, CA 92108</p>
-            <a href="#">Book Online</a>
+			  <p><span><a href="https://www.google.com/maps/place/Student+Activity+Center/@30.2849146,-97.7381997,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b59b81da169f:0x74d4292e5f6afe63!8m2!3d30.28491!4d-97.7360057">Students Activity Center</a></span></p>
+            <p>2201 Speedway</p>
+            <p>Austin, TX 78712</p>
           </div>
-
+			
+			<!-- 
           <h5><i class="fa fa-chevron-right"></i> Nearby Accomodation</h5>
 
           <div class="venue">
@@ -694,7 +714,7 @@
             <p>San Diego, CA 92108</p>
             <a href="#">Book Online</a>
           </div>
-
+          -->
           <h5><i class="fa fa-chevron-right"></i> Additional details</h5>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

@@ -894,6 +894,8 @@
 }
 .fa-angle-up:before {
   content: "\f106";
+  background-color: black;
+	color: black;
 }
 .fa-angle-down:before {
   content: "\f107";
