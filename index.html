@@ -135,7 +135,7 @@
           
           <input type="text" name="program" id="program" placeholder="Pay the deposit at the link below" disabled="disabled" />
 
-          <button name="submit" type="submit" href="http://texasusit.org" data-dismiss="modal">Complete Registeration</button>
+          <button name="submit" type="submit" href="#success" data-dismiss="modal" data-toggle="modal">Complete Registeration</button>
 
         </form>
 
@@ -162,6 +162,25 @@
         </div>
       </div>
     </div>
+    
+    
+    <!-- Successful registration modal -->
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Successful registration!</h4>
+      </div>
+      <div class="modal-body">
+        We have received your registration information. Please be sure to go to texasusit.org and pay the refundable deposit. We cannot sign up your team until you do so!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     
 
     <!-- menu -->

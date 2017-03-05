@@ -139,6 +139,10 @@ a {
     z-index: 10005;
 }
 
+#success{
+    z-index: 10005;
+}
+
 /* 4. Main Container */
 .page {
   text-align: left;
