@@ -182,11 +182,11 @@
   </div>
 </div>
     
-
     <!-- menu -->
     <div class="menu">
-		
+		<img src="images/logo-white.png" style="width: 50px; float: left; margin-left: 20px; margin-top: 9px; margin-right: 20px;">
       <ul>
+		<li><a href="#about" id="about-link">about</a></li>  
         <li><a href="#schedule" id="schedule-link">schedule</a></li>
         <li><a href="#sponsors" id="sponsors-link">sponsors</a></li>
         <li><a href="#location" id="location-link">location</a></li>
@@ -255,9 +255,10 @@
 	</div>
   </div>
   <!-- header ends! -->
-  <a name="about"></a>
+  
   <!-- topics -->
   <div class="topics">
+	  <a id="about" class="anchor"></a>
     <div class="container">
 		<p id="main-description"><strong style="color: black;">TEXAS SHARK TANK</strong> (TST) is a one-of-a-kind entrepreneurial case competition hosted by the <strong><a href="http://texasusit.org">University Securities Investment Team</a> and the <a href="http://txconvergent.org">Texas Convergent</a></strong>. TST gives UT students the chance to pitch a business idea to a panel of angel investors, investment professionals, and serial entrepreneurs. Students will come up with their own idea, develop a business plan/implementation strategy, and a prodcut mockup to pitch to judges. Texas Convergent will be hosting a two week incubator program to assist competition participants in building out their ideas. Texas Shark Tank starts on March 7th culminating with the <strong>Pitch Day on April 1.</strong></p>
 		
@@ -729,20 +730,38 @@
   </div>
   <!-- location ends! -->
 
+	<a id="contact" class="anchor"></a>
   <!-- social -->
   <div class="social">
     <div class="container">
 
       <div>
-        <h2>Keep me informed</h2>
-        <p class="subtitle">Signup to our mailing list or connect via Facebook</p>
-
-        <form action="" method="post">
+        <h2>Contact Us</h2>
+        <p class="subtitle">Signup to our Slack Team</p>
+		  
+        	<div class="col-md-4 contacts">
+				<p class="contact-names">Joseph Lee</p>
+				<p><i>USIT - Vice President</i></p>
+				<a href="mailto:vicepresident@usiteam.org?Subject=Question about Shark Tank" ><i class="fa fa-envelope" aria-hidden="true"></i> vicepresident@usiteam.org</a>
+		  	</div>
+		  	<div class="col-md-4 contacts">
+				<p class="contact-names">Arjo Mozumder</p>
+				<p><i>Convergent - President</i></p>
+				<a href="mailto:president@txconvergent.org" ><i class="fa fa-envelope" aria-hidden="true"></i> president@txconvergent.org</a>
+		  	</div>
+		  <div class="col-md-4 contacts">
+			  <p class="contact-names">Public Slack Team</p>
+			  <img src="images/slack-logo.png" width="175px;">
+		  	</div>
+		 
+		  <!-- 
+		  <form action="" method="post">
           <input type="text" name="name" placeholder="Enter your email address" />
           <button name="submit" type="submit"><i class="fa fa-arrow-circle-right"></i></button>
         </form>
 
         <a href="#"><i class="fa fa-facebook"></i></a>
+		-->
       </div>
 
     </div>
@@ -772,35 +791,35 @@
 </div>
 <!-- back to top ends! -->
 
+
 <!-- contact form overlay popup -->
+<!--
 <div class="overlay" style="display: none;">
 
   <div class="contact-form">
     
-    <h3>Contact Us</h3>
+	<p>Contact Us</p>
     <p>We will get back to you as soon as possible</p>
 
-    <!-- contact form -->
+   
     <div class="form">
       <form action="contact.php" method="post">
         <input type="text" name="name" placeholder="Name"/>
         <input type="text" name="email" placeholder="Email"/>
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea name="message" placeholder="Message" style="height: 75px;"></textarea>
         <button name="submit" type="submit">Send Message</button>
 
       </form>
     </div>
-    <!-- contact form ends! -->
-
-    <!-- Do Not Remove! -->
+    
     <p class="error"></p>
     <p class="message"></p>
-    <!-- Do Not Remove! Ends! -->
-
+   
     <a href="#" class="close-contact-form"><i class="fa fa-times fa-lg"></i></a>
   </div>
 
 </div>
+-->
 <!-- contact form overlay popup ends! -->
 
 <!-- scripts -->

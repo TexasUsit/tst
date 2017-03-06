@@ -22,6 +22,6 @@ $(document).ready(function(){
 		}
 		i_image++;
 		if(i_image > 1) {i_image=0;}
-	}, 5000);
+	}, 7000);
 	
 });

@@ -928,7 +928,7 @@ a {
     margin-bottom: 0; }
   .social .subtitle {
     margin-bottom: 20px; }
-  .social input, .social button, .social a {
+  .social input, .social button{
     float: left;
     height: 60px;
     line-height: 60px; }
@@ -941,7 +941,7 @@ a {
 	width: 300px;}
   .social button {
     cursor: pointer; }
-  .social button, .social a {
+  .social button{
     margin-right: 1px;
     width: 60px;
     text-align: center;
@@ -950,6 +950,12 @@ a {
     font-size: 24px; }
     .social button:hover, .social a:hover {
       color: #95a5a5; }
+.social a{
+	text-align: center;
+}
+.social a:hover{
+	color: black;
+}
 
 /* 11. Footer Section */
 .footer {
@@ -1092,4 +1098,14 @@ a {
 #price-modal {
 	padding-left: 0px;
 	margin-bottom: 20px;
+}
+
+.contact-names {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.contacts {
+	text-align: center;
+	margin-bottom: 25px;
 }
